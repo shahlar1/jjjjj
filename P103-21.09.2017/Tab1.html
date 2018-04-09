@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title></title>
+	<style type="text/css">
+		.tab {
+			width: 100px;
+			height: 50px;
+			border: 1px solid;
+			display: inline-block;
+			background-color: green;
+		}
+		.content {
+			display: none;
+			width: 300px;
+			height: 100px;
+			border: 1px solid red;
+		}
+		.active{
+			display: block;
+		}
+	</style>
+
+	<script type="text/javascript" src='Tab1.js'></script>
+
+
+</head>
+<body>
+	<ul>
+	<li class="tab" data-content='hello1'>Tab1</li>
+	<li class="tab" data-content='hello2'>Tab2</li>
+	<li class="tab" data-content='hello3'>Tab3</li>
+	</ul>
+
+	<div class="content active" id="hello1">Hello world1</div>
+	<div class="content" id="hello2">Hello world2</div>
+	<div class="content" id="hello3">Hello world3</div>
+	
+</body>
+</html>

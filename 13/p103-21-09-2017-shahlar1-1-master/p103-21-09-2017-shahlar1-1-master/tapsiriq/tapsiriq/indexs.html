@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        width:500px; height: 500px; 
+    }
+    button{
+      position: absolute;top: 200px;
+    }
+    .button1{
+    
+    }
+    .button2{
+        left:450px; 
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+    <img src="img/z2.jpg" id="slide" style="width:500px; position:relative; height:450px; " >
+    <button class="buton1" onclick="mySlide('prev')"> <  </button>
+    <button class="button2"onclick="mySlide('next')"> > </button>
+</div>
+<script>
+var i =0,img=[
+ "img/z2.jpg", 
+ "img/z5.jpg",
+"img/z3.jpg",
+"img/z1.jpg",
+]
+function mySlide(shah){
+if(shah==='next'){
+  i++;
+  if(i===img.length){
+       i=img.length -1
+    
+     
+ }
+}
+else{
+    i--;
+    if(i<0){
+i=0
+    }
+}
+document.getElementById('slide').src=img[i];
+
+}
+
+
+
+
+
+</script>
+
+    
+</body>
+</html>
